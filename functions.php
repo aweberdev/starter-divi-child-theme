@@ -135,7 +135,20 @@ function my_added_social_icons($kkoptions) {
 }
 add_filter('et_epanel_layout_data', 'my_added_social_icons', 99);
 
+
+// Remove the Divi Projects post type
+add_filter( 'et_project_posttype_args', 'mytheme_et_project_posttype_args', 10, 1 );
+function mytheme_et_project_posttype_args( $args ) {
+      return array_merge( $args, array(
+            'public'              => false,
+            'exclude_from_search' => false,
+            'publicly_queryable'  => false,
+            'show_in_nav_menus'   => false,
+            'show_ui'             => false
+      ));
+}
+
 define( 'DDPL_DOMAIN', 'my-domain' ); // translation domain
-require_once( 'vendor/divi-disable-premade-layouts/divi-disable-premade-layouts.php' );
+require_once( 'vendor/divi-disable-premade-layouts/divi-disable-premade-layouts.php' ); // Disable premade Divi layouts
 
 ?>
