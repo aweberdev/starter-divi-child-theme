@@ -42,31 +42,10 @@
 		</a>
 	</li>
 <?php endif; ?>
-<?php if ( 'on' === et_get_option( 'divi_show_dribbble_icon', 'on' ) ) : ?>
-	<li class="et-social-icon et-social-dribbble">
-		<a href="<?php echo esc_url( et_get_option( 'divi_dribbble_url', '#' ) ) . '"' . $open_newtab; ?>" class="icon">
-			<span><?php esc_html_e( 'Dribbble', 'Divi' ); ?></span>
-		</a>
-	</li>
-<?php endif; ?>
-<?php if ( 'on' === et_get_option( 'divi_show_vimeo_icon', 'on' ) ) : ?>
-	<li class="et-social-icon et-social-vimeo">
-		<a href="<?php echo esc_url( et_get_option( 'divi_vimeo_url', '#' ) ) . '"' . $open_newtab; ?>" class="icon">
-			<span><?php esc_html_e( 'Vimeo', 'Divi' ); ?></span>
-		</a>
-	</li>
-<?php endif; ?>
 <?php if ( 'on' === et_get_option( 'divi_show_linkedin_icon', 'on' ) ) : ?>
 	<li class="et-social-icon et-social-linkedin">
 		<a href="<?php echo esc_url( et_get_option( 'divi_linkedin_url', '#' ) ) . '"' . $open_newtab; ?>" class="icon">
 			<span><?php esc_html_e( 'Linkedin', 'Divi' ); ?></span>
-		</a>
-	</li>
-<?php endif; ?>
-<?php if ( 'on' === et_get_option( 'divi_show_myspace_icon', 'on' ) ) : ?>
-	<li class="et-social-icon et-social-myspace">
-		<a href="<?php echo esc_url( et_get_option( 'divi_myspace_url', '#' ) ) . '"' . $open_newtab; ?>" class="icon">
-			<span><?php esc_html_e( 'Myspace', 'Divi' ); ?></span>
 		</a>
 	</li>
 <?php endif; ?>
@@ -77,17 +56,17 @@
 		</a>
 	</li>
 <?php endif; ?>
+<?php if ( 'on' === et_get_option( 'divi_show_github_icon', 'on' ) ) : ?>
+	<li class="et-social-icon et-social-github">
+		<a href="<?php echo esc_url( et_get_option( 'divi_github_url', '#' ) ) . '"' . $open_newtab; ?>" class="icon">
+			<i class="fab fa-github"></i>
+		</a>
+	</li>
+<?php endif; ?>
 <?php if ( 'on' === et_get_option( 'divi_show_youtube_icon', 'on' ) ) : ?>
 	<li class="et-social-icon et-social-youtube">
 		<a href="<?php echo esc_url( et_get_option( 'divi_youtube_url', '#' ) ) . '"' . $open_newtab; ?>" class="icon">
 			<span><?php esc_html_e( 'Youtube', 'Divi' ); ?></span>
-		</a>
-	</li>
-<?php endif; ?>
-<?php if ( 'on' === et_get_option( 'divi_show_flickr_icon', 'on' ) ) : ?>
-	<li class="et-social-icon et-social-flikr">
-		<a href="<?php echo esc_url( et_get_option( 'divi_flickr_url', '#' ) ) . '"' . $open_newtab; ?>" class="icon">
-			<span><?php esc_html_e( 'Flickr', 'Divi' ); ?></span>
 		</a>
 	</li>
 <?php endif; ?>
